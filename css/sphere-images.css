@@ -1,0 +1,55 @@
+
+.mask-circle{
+    -webkit-mask-image: radial-gradient(ellipse 52% 52% at 50% 50%, black 0%, black 41%, transparent 100%),radial-gradient(ellipse 47% 44% at 50% 50%, black 0%, black 69%, transparent 100%);
+    mask-image: radial-gradient(ellipse 52% 52% at 50% 50%, black 0%, black 41%, transparent 100%),radial-gradient(ellipse 47% 44% at 50% 50%, black 0%, black 69%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 52% 52% at 50% 50%, black 0%, black 41%, transparent 100%),radial-gradient(ellipse 51% 51% at 50% 50%, black 0%, black 76%, transparent 100%);
+    mask-image: radial-gradient(ellipse 52% 52% at 50% 50%, black 0%, black 41%, transparent 100%),radial-gradient(ellipse 51% 51% at 50% 50%, black 0%, black 76%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 53% 53% at 50% 50%, black 0%, black 41%, transparent 100%),radial-gradient(ellipse 57% 58% at 49% 45%, black 0%, black 76%, transparent 100%);
+    mask-image: radial-gradient(ellipse 53% 53% at 50% 50%, black 0%, black 41%, transparent 100%),radial-gradient(ellipse 57% 58% at 49% 45%, black 0%, black 76%, transparent 100%);
+    border-radius: 50%;
+}
+
+.slide-svg{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+
+}
+
+.center-bg{
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+.sphere-link{
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.about-photo{
+    background-image: url('../images/about-photo.jpg');
+    background-position: 30% center;
+}
+
+#portfolio-arm1-sphere{
+    background-image: url('../images/portfolio-photo.jpg');
+}
+
+#tag-it-bg{
+    background-image: url('../images/tag-it.png');
+}
+
+#busk-bg{
+    background-image: url('../images/busk-design.jpg');
+}
+
+#cocktail-town-bg{
+    background-image: url('../images/cocktail-town.png');
+}
+#twodaystoalaska-bg{
+    background-image: url('../images/twodaystoalaska.png');
+}
+

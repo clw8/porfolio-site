@@ -1,0 +1,16 @@
+clipPath circle{
+    transition: all 2s ease;
+}
+
+.portfolio-arm2-expandclip{
+    r: 245 !important;
+}
+.contact-arm2-expandclip{
+    r: 160 !important;
+}
+.contact-arm3-expandclip{
+    r: 160 !important;
+}
+.about-arm2-expandclip{
+    r: 250 !important;
+}

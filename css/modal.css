@@ -1,0 +1,318 @@
+.modal{
+    overflow: hidden;
+    z-index: 8;
+    /* background: white; */
+    border-radius: 7px;
+    transition: transform 1s ease;
+}
+
+#about-modal, #contact-modal{
+    position: fixed;
+    transform: translateX(-120%);
+    height: 90%;
+    top: 5%;
+    /* left: 10%;
+    width: 80%; */
+    left: 1%;
+    width: 98%;
+    pointer-events: none;
+}
+
+.show-modal{
+    transform: unset !important;
+}
+
+
+.grey-top{
+    position: absolute;
+    height: 10px;
+    top: 0;
+    left: 10px;
+    width: 75%;
+    z-index: 7;
+    /* transform: translateX(-10%) skewX(-45deg);
+    border-radius: 0px 0px 2px 0px; */
+    border-radius: 0px 3px 0px 0px;
+    overflow: hidden;
+}
+
+.grey-top div{
+    background: rgba(26, 26, 27, 0.7);
+    transform: translateX(-10%) skewX(45deg);
+    height: 100%;
+    width: 100%;
+}
+
+.grey-left{
+    position: absolute;
+    height: 300px;
+    top: 0;
+    left: 0;
+    width: 10px;
+    z-index: 7;
+    background: rgba(26,26,27,0.7);
+
+    transform: translateY(-10%) skewY(45deg);
+    border-radius: 2px 0px 0px 3px;
+
+}
+
+.white-main{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    z-index: 8;
+    padding: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    color: black;
+    cursor: default;
+    pointer-events: all;
+    border-radius: 0px 0px 12px 12px;
+    /* border-left: 1px solid rgba(218, 224, 226, 0.8);
+    border-bottom: 4px solid rgba(218, 224, 226, 0.8); */
+    pointer-events: all;
+    background: linear-gradient(225deg, transparent 20px, rgba(255, 255, 255, 0.97) 0px);
+}
+
+#contact-modal .white-main{
+    height: auto;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.overflow-allow{
+    overflow-x: scroll;
+    height: 100%;
+    /* background: white; */
+}
+
+/* .white-main:after{
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top: 10px;
+    left: 10px;
+
+    
+    border-radius: 0px 0px 8px 8px;
+    border-radius: 0px 0px 22px 18px;
+
+    width: 100%;
+    height: 100%;
+
+    top: 10px;
+    left: 10px;
+    height: 98%;
+    width: 98%;
+    padding: 10px;
+
+    background: rgba(255,255,255,0.95);
+    background: linear-gradient(225deg, transparent 20px, rgba(255,255,255,0.97) 0);
+} */
+
+#about-first-section{
+    height: auto;
+}
+
+
+#about-photo{
+    width: 20vw;
+    height: 20vw;
+    /* min-width: 220px;
+    min-height: 220px; */
+    min-width: 160px;
+    min-height: 160px;
+    margin-right: 0;
+    margin-bottom: 5%;
+
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+#about-desc{
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section a{ color: black; 
+    text-decoration: underline;
+    line-height: 0;
+    cursor: pointer;
+}
+.section a:hover{ color: rgb(66, 134, 244)}
+
+#attr-section li div{
+    min-width: 120px;
+    margin-left: 10px;
+}
+
+#attr-section li div:nth-child(2){
+    border-right: 1px solid rgba(0,0,0,0.4);
+}
+
+#attr-section li{
+    display: flex;
+    margin-top: 6px;
+}
+
+
+
+.close-button{
+    position: absolute;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    line-height: 12px;
+    padding: 4px;
+    left: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.close-button:hover{
+    opacity: 0.7;
+}
+
+
+
+
+/* CONTACT FORM */
+input[type="text"], textarea, label{
+    width: calc(95% - 45px);
+    margin-left: 2.5%;
+
+}
+
+.submit-div, #submit-res{
+    display:flex;
+    justify-content: flex-end;
+    margin-right: calc(2.5% + 45px);
+
+}
+
+
+form textarea{
+   height: 150px;
+}
+.error{
+    color: red;
+}
+
+.ok{
+    color: lightgreen;
+}
+
+
+
+
+@media(min-width: 440px) {
+    .white-main{
+        background: linear-gradient(225deg, transparent 50px, rgba(255,255,255,0.97) 0);
+        padding: calc(1.5% + 15px);      
+
+    }
+    #about-modal, #contact-modal{
+        height: 80%;
+        top: 10%;
+    }  
+}
+
+@media (min-width: 440px) and (orientation: portrait){
+    .white-main{
+        padding: calc(15px);      
+    }
+}
+
+
+@media(min-width: 580px){
+    #about-modal, #contact-modal{
+        left: 6%;
+        width: 88%;
+    }
+    #attr-section li div{
+        min-width: 140px;
+    }
+}
+
+@media(min-width: 780px){
+    #about-photo{
+        min-width: 220px;
+        min-height: 220px;
+        margin-right: 2.5%;
+        margin-bottom: 5%;
+
+    }
+
+    #about-modal, #contact-modal{
+        left: 4%;
+        width: 92%;
+    }
+
+
+}
+
+@media(min-height: 680px){
+    #about-modal .white-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}
+
+@media(min-width: 850px){
+  
+    #about-modal, #contact-modal{
+        /* left: 6%;
+        width: 88%; */
+        left: 10%;
+        width: 80%;
+    }
+
+    .white-main{
+        padding: calc(3% + 15px);
+    }
+}
+
+
+
+@media(max-width: 440px) {
+    #about-first-section{
+        flex-direction: column;
+    }
+}
+
+
+
+
+@media(min-width: 1300px){
+    #about-modal, #contact-modal{
+        top: 15%;
+    }  
+    #about-modal .white-main{
+        height: auto;
+    }
+    .about-icons{
+        margin-top: 5%;
+    }
+}
+
+
+@media(orientation: landscape){
+    #contact-modal .white-main{
+        height: 100%;
+    }
+}

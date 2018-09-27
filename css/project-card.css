@@ -1,0 +1,221 @@
+.project-card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transition: transform 0.6s ease;
+}
+
+.project-card img{
+    width: 40%;
+    min-width: 130px;
+    border-radius: 5px;
+    margin-right: 2%;
+}
+
+
+.project-card p{
+    margin-bottom: 0.5rem;
+}
+
+#project-cards-modal{
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(120%);
+    transition: all 0.7s ease;
+    pointer-events: none;
+}
+
+
+
+#project-cards-container{
+    height: 80%;
+    width: 96%;
+    min-height: 360px;
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+    box-shadow: -43px 48px 50px 10px rgba(0,0,0,0.4);
+}
+
+.tagline{
+    color: darkgray;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.project-desc{
+    margin-top: 15px;
+    font-size: 1.2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.card-top-section a{
+    color: rgba(0,0,0,0.8);
+}
+
+.card-top-section a:hover{
+    color: rgba(0,0,0,0.6);
+}
+
+.inactive-card{
+    transition: all 0.6s ease;
+}
+
+.inactive-card .white-main:before{
+    content: "";
+    position: fixed;
+    z-index: -1;
+    
+    border-radius: 0px 0px 22px 18px;
+    border-left: 1px solid rgba(218, 224, 226, 0.3);
+    border-bottom: 4px solid rgba(218, 224, 226, 0.3);
+
+
+    top: 10px;
+    left: 10px;
+    height: 98%;
+    width: 98%;
+    padding: 10px;
+    background: linear-gradient(225deg, transparent 50px, rgba(166, 198, 235, 0.7) 0);
+}
+
+.inactive-card .white-main{
+    border-radius: 5px 0px 22px 18px;
+    background: transparent;
+}
+
+.inactive-card .grey-top div, .inactive-card .grey-left{
+    background: none !important;
+}
+
+.inactive-card img{
+    opacity: 0.5;
+}
+
+.inactive-card:hover .white-main:before{
+    transform: scale(1.1);
+    background: linear-gradient(225deg, transparent 50px, rgba(255,255,255,0.6) 0);
+}
+.inactive-card:hover .grey-left, .inactive-card:hover .grey-top{
+    background: rgba(0,0,0,0.2);
+}
+
+#cards-buttons{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    padding-bottom: 10px;
+}
+
+
+
+#next-card:hover, #prev-card:hover{
+    opacity: 0.8;
+}
+
+.arrows{
+    padding: 20px;
+    pointer-events: none;
+}
+
+.arrows div{
+    cursor: default;
+    color: white;
+    pointer-events: all;
+}
+
+.project-desc p{
+    line-height: calc(100% + 2vh);
+}
+
+
+@keyframes b-to-f-card-transition{
+    0%{
+        opacity: 0;
+        transform: translate(0%, -30%);
+    }
+    5%{
+        opacity: 0;
+        transform: translate(0%, -30%);      
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0%, 0%);
+    }
+
+}
+
+
+@keyframes f-to-b-card-transition{
+    from{
+        opacity: 0;
+        transform: translate(-12%, -31%);
+    }
+    to{
+        opacity: 1;
+        transform: translate(-12%, 9%);
+    }
+}
+
+@media (min-width: 500px){
+    #project-cards-container{
+        height: 75%;
+        width: 84%;
+    }
+
+    .project-card img{
+        min-width: 180px;
+        margin-right: 5%;
+    }
+
+    .project-card p{
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media(min-width: 720px){
+    #project-cards-container{
+        height: 65%;
+        width: 80%;
+    }
+
+}
+
+
+@media(min-width: 680px){
+    .project-card p{
+        margin-bottom: 1.2rem;
+    }
+
+    #project-cards-modal{
+        padding-top: 8%;
+    }
+}
+
+
+
+@media(orientation: landscape) and (max-width: 720px){
+    #project-cards-modal{
+        padding-top: 5%;
+    }
+
+    #cards-buttons{
+        padding-bottom: 5px;
+    }
+
+    #project-cards-container{
+        height: 50%;
+    }
+}
+
+
