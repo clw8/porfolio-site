@@ -1,13 +1,18 @@
 import modalsWrapper from './modals.js';
 import nodesWrapper from './nodes.js';
 import interfaceOperations from './interface.js';
+
+
+//uncomment below for webpack
+//import '../css/styles.css';
+
 nodesWrapper();
 modalsWrapper();
 interfaceOperations();
 
 
 
-
+//contact form
 const contactSubmit = document.querySelector('#contact-submit');
 const formInputs = document.querySelectorAll('.form-input');
 contactSubmit.addEventListener('click', (e)=> {

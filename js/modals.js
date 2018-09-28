@@ -92,10 +92,18 @@ function modalsWrapper(){
         }
         30%{
             opacity: 0;
+            -webkit-transform: translate(${(projectCards.length - 1) * -4}%, ${((projectCards.length - 1) * 3) - 25}%);
+            -moz-transform: translate(${(projectCards.length - 1) * -4}%, ${((projectCards.length - 1) * 3) - 25}%);
+            -o-transform: translate(${(projectCards.length - 1) * -4}%, ${((projectCards.length - 1) * 3) - 25}%);
+            -ms-transform: translate(${(projectCards.length - 1) * -4}%, ${((projectCards.length - 1) * 3) - 25}%);
             transform: translate(${(projectCards.length - 1) * -4}%, ${((projectCards.length - 1) * 3) - 25}%);
         }
         to{
             opacity: 1;
+            -webkit-transform: translate(${(projectCards.length - 1) * -4}%, ${(projectCards.length - 1) * 3}%);
+            -moz-transform: translate(${(projectCards.length - 1) * -4}%, ${(projectCards.length - 1) * 3}%);
+            -o-transform: translate(${(projectCards.length - 1) * -4}%, ${(projectCards.length - 1) * 3}%);
+            -ms-transform: translate(${(projectCards.length - 1) * -4}%, ${(projectCards.length - 1) * 3}%);
             transform: translate(${(projectCards.length - 1) * -4}%, ${(projectCards.length - 1) * 3}%);
         }
     }`;

@@ -8,18 +8,20 @@
 
 #about-modal, #contact-modal{
     position: fixed;
-    transform: translateX(-120%);
+    /* transform: translateX(-120%); */
+    transform: translate(-50%, -50%) translateX(-120%);
     height: 90%;
-    top: 5%;
+    top: 54%;
     /* left: 10%;
     width: 80%; */
-    left: 1%;
+    left: 50%;
     width: 98%;
     pointer-events: none;
+    max-width: 920px;
 }
 
 .show-modal{
-    transform: unset !important;
+    transform: translate(-50%, -50%) !important;
 }
 
 
@@ -127,8 +129,8 @@
 
 
 #about-photo{
-    width: 20vw;
-    height: 20vw;
+    width: 18vw;
+    height: 18vw;
     /* min-width: 220px;
     min-height: 220px; */
     min-width: 160px;
@@ -215,6 +217,10 @@ form textarea{
     color: lightgreen;
 }
 
+#contact-button{
+    margin-top: calc(5px + 1%);
+}
+
 
 
 
@@ -226,20 +232,18 @@ form textarea{
     }
     #about-modal, #contact-modal{
         height: 80%;
-        top: 10%;
     }  
 }
 
 @media (min-width: 440px) and (orientation: portrait){
     .white-main{
-        padding: calc(15px);      
+        padding: 15px;      
     }
 }
 
 
 @media(min-width: 580px){
     #about-modal, #contact-modal{
-        left: 6%;
         width: 88%;
     }
     #attr-section li div{
@@ -249,22 +253,24 @@ form textarea{
 
 @media(min-width: 780px){
     #about-photo{
-        min-width: 220px;
-        min-height: 220px;
+        min-width: 210px;
+        min-height: 210px;
         margin-right: 2.5%;
         margin-bottom: 5%;
 
     }
 
     #about-modal, #contact-modal{
-        left: 4%;
         width: 92%;
     }
 
+    .about-icons{
+        margin-top: calc(5px + 1%);
+    }
 
 }
 
-@media(min-height: 680px){
+@media(min-height: 680px) and (orientation: portrait){
     #about-modal .white-main{
         display: flex;
         flex-direction: column;
@@ -278,12 +284,11 @@ form textarea{
     #about-modal, #contact-modal{
         /* left: 6%;
         width: 88%; */
-        left: 10%;
         width: 80%;
     }
 
     .white-main{
-        padding: calc(3% + 15px);
+        padding: calc(1.5% + 15px);
     }
 }
 
@@ -299,19 +304,37 @@ form textarea{
 
 
 @media(min-width: 1300px){
-    #about-modal, #contact-modal{
-        top: 15%;
-    }  
-    #about-modal .white-main{
-        height: auto;
+
+    #contact-modal, #about-modal{
+        max-width: 1080px;
+        transform: translate(-50%, -50%) translateX(-150%);
     }
-    .about-icons{
-        margin-top: 5%;
+
+    .white-main{
+        padding: calc(2.5% + 15px);
     }
 }
 
 
-@media(orientation: landscape){
+@media(min-width: 1700px){
+    #about-photo{
+        width:17vw;
+        height: 17vw;
+    }
+
+    #contact-modal, #about-modal{
+        max-width: 1280px;
+        transform: translate(-50%, -50%) translateX(-200%);
+    }
+
+    .white-main {
+        padding: calc(5.5% + 15px);
+    }
+
+}
+
+
+@media(orientation: landscape) and (max-height: 690px){
     #contact-modal .white-main{
         height: 100%;
     }
