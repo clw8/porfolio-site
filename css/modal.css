@@ -125,6 +125,7 @@
 
 #about-first-section{
     height: auto;
+    margin-bottom: 10px;
 }
 
 
@@ -136,8 +137,6 @@
     min-width: 160px;
     min-height: 160px;
     margin-right: 0;
-    margin-bottom: 5%;
-
     border-radius: 50%;
     flex-shrink: 0;
 }
@@ -256,7 +255,6 @@ form textarea{
         min-width: 210px;
         min-height: 210px;
         margin-right: 2.5%;
-        margin-bottom: 5%;
 
     }
 
@@ -306,12 +304,11 @@ form textarea{
 @media(min-width: 1300px){
 
     #contact-modal, #about-modal{
-        max-width: 1080px;
         transform: translate(-50%, -50%) translateX(-150%);
     }
 
     .white-main{
-        padding: calc(2.5% + 15px);
+        padding: calc(2% + 15px);
     }
 }
 
@@ -323,7 +320,7 @@ form textarea{
     }
 
     #contact-modal, #about-modal{
-        max-width: 1280px;
+        max-width: 1100px;
         transform: translate(-50%, -50%) translateX(-200%);
     }
 

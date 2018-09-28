@@ -92,7 +92,9 @@ function interfaceOperations(){
                     if(!currentArm.shown){
                         let nextArmObj = findNextArmObj(currentArm);
                         //remove active class from link leading to the next arms
-                        nextArmObj.linkElem.classList.remove('active');
+                        if(!!nextArmObj.linkElem){
+                            nextArmObj.linkElem.classList.remove('active');
+                        }
                         if(!!nextArmObj.nextArm){
                             showHideLinksForNextArm(nextArmObj, false);
                             showHideNextArm(nextArmObj, false);

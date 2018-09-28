@@ -23,13 +23,6 @@ let css =  {
       },
       {
         loader: 'postcss-loader',
-        options: {
-          config: {
-            plugins: [
-              require('autoprefixer')
-            ]
-          }
-        },
       },
     ]
   };
@@ -37,9 +30,9 @@ let css =  {
 let babel = {
     test: /\.js$/,
     exclude: /node_modules/,
-    use: {
-      loader: "babel-loader"
-    }
+    use:  ["babel-loader", 
+          "es-lint-loader"
+        ]
   };
 
   let img = {
