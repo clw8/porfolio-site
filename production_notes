@@ -1,0 +1,5 @@
+before 'webpack' command:
+1)comment out script and link tag in head of index.html
+2)unncomment the import line in main.js
+
+after uploading: copy and paste the pdf file into the dist folder
