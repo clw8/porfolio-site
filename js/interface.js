@@ -163,7 +163,7 @@ function interfaceOperations(){
                     case "about-arm2": maxRadius = 250; rate = 2; break;
                 }
                 let baseR = option.shown ? 50 : maxRadius;
-                var intervalR = setInterval(increaseR, 5);
+                let intervalR = setInterval(increaseR, 5);
                 function increaseR(){
                     option.nextArmClip.setAttribute('r', baseR)
                     option.shown ? baseR += rate : baseR -= rate;

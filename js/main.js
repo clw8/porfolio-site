@@ -2,6 +2,7 @@ import modalsWrapper from './modals.js';
 import nodesWrapper from './nodes.js';
 import interfaceOperations from './interface.js';
 
+import Typed from '../node_modules/typed.js/src/typed.js';
 
 //uncomment below for webpack
 //import '../css/styles.css';
@@ -18,15 +19,15 @@ const formInputs = document.querySelectorAll('.form-input');
 contactSubmit.addEventListener('click', (e)=> {
     e.preventDefault();
     //json triggers preflight, so we are manually serializing the input data rather than sending as a json object
-   var data = "";
-    for (var i = 0; i < formInputs.length; ++i) {
-      var input = formInputs[i];
+   let data = "";
+    for (let i = 0; i < formInputs.length; ++i) {
+      let input = formInputs[i];
       if (input.name) {
       data += `${input.value}%$`;
       }
     }
 
-    var xhttp = new XMLHttpRequest();
+    let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         document.getElementById("submit-res").innerHTML = "Thank you for your message :)";
@@ -47,3 +48,14 @@ contactSubmit.addEventListener('click', (e)=> {
 
 
 
+//header with typed.js
+let options = {
+  strings: ["Full Stack Developer", "Creative Problem Solver", "Growth Hacker", "Ruby on Rails", "ReactJS", "Node.js", "Vue.js"],
+  typeSpeed: 40,
+  loop: true,
+  startDelay: 400,
+  backDelay: 1900,
+  backSpeed: 50,
+}
+
+let typed = new Typed(".typed", options);

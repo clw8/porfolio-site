@@ -16,7 +16,7 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <!-- CSS
+  <link href="https://fonts.googleapis.com/css?family=Kodchasan:200,400" rel="stylesheet">    <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <!-- comment out below for webpack -->
   <link rel="stylesheet" href="css/styles.css">
@@ -28,7 +28,10 @@
 </head>
 <body>
   <div class="interface-wrapper">
-  
+    <header>
+      <h1>Christopher Linshen Walsh</h1>
+      <h2 class="typed"></h2>
+    </header>
 
     <!-- INTERFACE: separated into sphere-links and sphere -->
     <div class="content">
@@ -240,18 +243,18 @@
 
     <!-- MODAL -->
     <div id="about-modal" class="modal">
-        <div class="grey-top"><div></div></div>
-        <div class="grey-left"></div>
         <div class="white-main">
 
             <div id="about-first-section" class="section flex-c">
               <div id="about-photo" class="center-bg about-photo"></div>
               <div id="about-desc">
-                  <p>
-                  Hi, I'm Chris, an ambitious and motivated developer, hoping to play a part in the development of the web.
-                  I joined Le Wagon batch in July 2018, where I built a few projects using Ruby on Rails, which you can check out <a href="#">here</a>.
-                  Before that, I spent a few months learning front-end, where I taught myself to use frameworks such as ReactJS and Angular 2.0+, and tools such as Webpack. 
-                </p>
+                  <div>
+                    <div class="cut-out"></div>
+                    <p>Hi, I'm Chris, an ambitious and motivated developer, hoping to play a part in the development of the web.
+                    I joined Le Wagon batch in July 2018, where I built a few projects using Ruby on Rails, which you can check out <a href="#">here</a>.
+                    Before that, I spent a few months learning front-end, where I taught myself to use frameworks such as ReactJS and Angular 2.0+, and tools such as Webpack. 
+                    </p>
+                </div>
                 <div class="section flex-c about-icons"> 
                   <a href="https://github.com/clw8" class="flex-c">
                   <div id="github-bg"><div class="icon black-icon"></div></div>
@@ -303,8 +306,6 @@
       <div id="project-cards-modal">
         <div id="project-cards-container">
             <div class="project-card modal flex-c">
-                <div class="grey-top"><div></div></div>
-                <div class="grey-left"></div>
                 <div class="white-main">
                   <div class="flex-c card-top-section">
                     <img src="images/busk-design.jpg" alt="">
@@ -325,8 +326,6 @@
             </div>
 
             <div class="project-card modal flex-c">
-                <div class="grey-top"><div></div></div>
-                <div class="grey-left"></div>
                 <div class="white-main">
                   <div class="flex-c card-top-section">
                     <img src="images/tag-it.png" alt="">
@@ -349,8 +348,6 @@
            
 
             <div class="project-card modal flex-c">
-                <div class="grey-top"><div></div></div>
-                <div class="grey-left"></div>
                 <div class="white-main">
                   <div class="flex-c card-top-section">
                     <img src="images/cocktail-town.png" alt="">
@@ -372,8 +369,6 @@
            
       
             <div class="project-card modal flex-c">
-                <div class="grey-top"><div></div></div>
-                <div class="grey-left"></div>
                 <div class="white-main">
                   <div class="flex-c card-top-section">
                     <img src="images/twodaystoalaska.png" alt="">
@@ -391,22 +386,22 @@
               </div>
 
 
-            <div id="cards-buttons" class="flex-c arrows">
+            <div id="cards-buttons" class="arrows">
               <div id="prev-card">
                 Previous </div>
-              <div>&nbsp;-- &nbsp;</div>
-              <div id="next-card">Next </div>
+                <div>&nbsp;-- &nbsp;</div>
+                <div id="next-card">Next </div>
+                <div>&nbsp;-- &nbsp;</div>
+                <div class="close-button">Close</div>
             </div>
             </div>
         </div>
 
         <div id="contact-modal" class="modal">
-            <div class="grey-top"><div></div></div>
-            <div class="grey-left"></div>
             <div class="white-main">
+              <div class="close-button">x</div>
               <div class="section">
-                <div class="close-button"></div>
-                <h3>Get in contact</h3>
+                <h3 style="text-align: center">Get in contact</h3>
               </div>
               <div class="section">
                   <!-- <form action="https://getsimpleform.com/messages?form_api_token=6ba1a87558206e60524d9d0952191bab" method="post"> -->

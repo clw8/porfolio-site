@@ -42,8 +42,8 @@ a:hover{
     overflow: hidden;
     display: flex;
     justify-content: center;
-    padding-top: 5%;
-    box-sizing: border-box;
+    padding-top: 160px;
+    box-sizing: content-box;
     transition: background 0.8s ease;
 }
 
@@ -101,10 +101,27 @@ body{
     font-size: 1.1em;
 }
 
-
-@media(min-width: 400px){
-    font-size: 1.1em;
+header{
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
 }
+
+header h2{
+    display: inline-block;
+}
+
+header h3{
+    font-weight: 200;
+}
+
+.typed-cursor{
+    position: relative;
+    bottom: 2px;
+}
+
+
+
 
 @media(min-width:430px){
     svg{
@@ -145,16 +162,18 @@ body{
 
 
     .content{
-        left: -10px;
         z-index: 0;
         width: 50vw;
         height: 50vw;
-        transform: translateX(0%);
     }
 }
 @media(min-width: 1500px){
     body{
         font-size: 1.8em;
+    }
+@media(min-width: 1800px){
+    body{
+        font-size: 2.1em;
     }
 
 

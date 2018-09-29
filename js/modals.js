@@ -18,8 +18,8 @@ function modalsWrapper(){
     var projectModalEl = document.querySelector('#project-cards-modal');
     var projectsLinks = Array.from(document.querySelectorAll('#portfolio-arm2-options .interface-link'));
     var projectsModal = new Modal(projectModalEl, interfaceWrapper);
-
-    addModalEventListeners([...projectsLinks, interfaceWrapper], projectsModal, (e)=>{
+    var projectsCloseButton = document.querySelector('#project-cards-modal .close-button');
+    addModalEventListeners([...projectsLinks, interfaceWrapper, projectsCloseButton], projectsModal, (e)=>{
         if(e.currentTarget == interfaceWrapper){
             projectsLinks.map( (link)=> {
                 link.classList.remove('active');
