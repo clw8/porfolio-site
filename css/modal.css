@@ -4,6 +4,7 @@
     /* background: white; */
     border-radius: 7px;
     transition: transform 1s ease;
+    visibility: hidden;
 }
 
 #about-modal, #contact-modal{
@@ -26,6 +27,7 @@
 
 .show-modal{
     transform: translate(-50%, -50%) !important;
+    visibility: visible !important
 }
 
 
