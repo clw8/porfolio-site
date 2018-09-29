@@ -1673,6 +1673,7 @@ clipPath circle{
     transition: -webkit-transform 1s ease;
     transition: transform 1s ease;
     transition: transform 1s ease, -webkit-transform 1s ease;
+    visibility: hidden;
 }
 
 #about-modal, #contact-modal{
@@ -1697,6 +1698,7 @@ clipPath circle{
 .show-modal{
     -webkit-transform: translate(-50%, -50%) !important;
             transform: translate(-50%, -50%) !important;
+    visibility: visible !important
 }
 
 
