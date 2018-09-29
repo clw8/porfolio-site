@@ -13,13 +13,13 @@ class Modal{
 
     toggleShow(event){
         event.stopPropagation();
-        if(event.currentTarget == this.interfaceEl){
+        if(event.currentTarget == this.interfaceEl || event.currentTarget.classList.contains('close-button')){
             this.shown ?  this.hide() : null;
         }
         else{
             this.element.classList.toggle('show-modal');
-            this.shown = !this.shown;
             this.interfaceEl.classList.toggle('interface-bg');
+            this.shown = !this.shown;
         }
     }
 }

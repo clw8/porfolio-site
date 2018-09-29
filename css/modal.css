@@ -22,6 +22,7 @@
 
 #about-modal, #contact-modal, #project-cards-modal{
     visibility: hidden;
+    opacity: 0;
 }
 
 #about-modal{
@@ -30,7 +31,8 @@
 
 .show-modal{
     transform: translate(-50%, -50%) !important;
-    visibility: visible !important
+    visibility: visible !important;
+    opacity: 1;
 }
 
 
@@ -158,7 +160,7 @@
 
 /* CONTACT FORM */
 input[type="text"], textarea, label{
-    width: calc(95% - 45px);
+    width: 95%;
     margin-left: 2.5%;
 
 }
