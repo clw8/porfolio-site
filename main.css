@@ -1673,7 +1673,6 @@ clipPath circle{
     transition: -webkit-transform 1s ease;
     transition: transform 1s ease;
     transition: transform 1s ease, -webkit-transform 1s ease;
-    visibility: hidden;
 }
 
 #about-modal, #contact-modal{
@@ -1689,6 +1688,10 @@ clipPath circle{
     width: 98%;
     pointer-events: none;
     max-width: 920px;
+}
+
+#about-modal, #contact-modal, #project-cards-modal{
+    visibility: hidden;
 }
 
 #about-modal{
@@ -2168,6 +2171,11 @@ input[type="text"], textarea, label{
 
 .project-desc p{
     line-height: calc(100% + 2vh);
+}
+
+.project-desc a{
+    color: black;
+    text-decoration: underline;
 }
 
 
