@@ -4,7 +4,6 @@
     /* background: white; */
     border-radius: 7px;
     transition: transform 1s ease;
-    visibility: hidden;
 }
 
 #about-modal, #contact-modal{
@@ -19,6 +18,10 @@
     width: 98%;
     pointer-events: none;
     max-width: 920px;
+}
+
+#about-modal, #contact-modal, #project-cards-modal{
+    visibility: hidden;
 }
 
 #about-modal{

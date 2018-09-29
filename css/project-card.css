@@ -152,6 +152,11 @@
     line-height: calc(100% + 2vh);
 }
 
+.project-desc a{
+    color: black;
+    text-decoration: underline;
+}
+
 
 @keyframes b-to-f-card-transition{
     0%{
