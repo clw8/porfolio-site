@@ -532,7 +532,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Kodchasan', monospace, sans-serif;
   font-weight: 300; }
 h1 { font-size: 2.4rem; line-height: 1.2;  letter-spacing: -.1rem;}
-h2 { font-size: 1.5rem; line-height: 1.25; letter-spacing: -.1rem; }
+h2 { font-size: 1.3rem; line-height: 1.25; letter-spacing: -.1rem; }
 h3 { font-size: 1.5rem; line-height: 1.3;  letter-spacing: -.1rem; }
 h4 { font-size: 1.4rem; line-height: 1.35; letter-spacing: -.08rem; }
 p{ }
@@ -540,7 +540,7 @@ p{ }
 /* Larger than phablet */
 @media (min-width: 550px) {
   h1 { font-size: 3.0rem; }
-  h2 { font-size: 1.8rem; }
+  h2 { font-size: 1.5rem; }
   h3 { font-size: 1.5rem; }
   h4 { font-size: 1.2rem; }
 }
@@ -773,27 +773,27 @@ fieldset {
 }
 
 .about-photo{
-    background-image: url(../031cfd7b8edadbb6d95ece5a40a445d3.jpg);
+    background-image: url(./031cfd7b8edadbb6d95ece5a40a445d3.jpg);
     background-position: 30% center;
 }
 
 #portfolio-arm1-sphere{
-    background-image: url(../e4ded285d00ab965e21d28073cabce28.jpg);
+    background-image: url(./e4ded285d00ab965e21d28073cabce28.jpg);
 }
 
 #tag-it-bg{
-    background-image: url(../38243f05b195e8064f6477df4beb0a3a.png);
+    background-image: url(./38243f05b195e8064f6477df4beb0a3a.png);
 }
 
 #busk-bg{
-    background-image: url(../e556db0f3e7e6668ea0957459194da46.jpg);
+    background-image: url(./e556db0f3e7e6668ea0957459194da46.jpg);
 }
 
 #cocktail-town-bg{
-    background-image: url(../15636adb541a749b31fe0ec43cc83cd3.png);
+    background-image: url(./15636adb541a749b31fe0ec43cc83cd3.png);
 }
 #twodaystoalaska-bg{
-    background-image: url(../c94fc92ed84d3afc1684416c033c53b0.png);
+    background-image: url(./c94fc92ed84d3afc1684416c033c53b0.png);
 }
 
 
@@ -1607,7 +1607,7 @@ clipPath circle{
 
 .icon{
     background-size: 210% 210%;
-    background-image: url(../d74aab33cce28ce63d89204d5f36db97.png);
+    background-image: url(./d74aab33cce28ce63d89204d5f36db97.png);
     height: 45px;
     width: 45px;
 }
