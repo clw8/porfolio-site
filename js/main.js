@@ -5,7 +5,7 @@ import interfaceOperations from './interface.js';
 import Typed from '../node_modules/typed.js/src/typed.js';
 
 //uncomment below for webpack
-//import '../css/styles.css';
+import '../css/styles.css';
 
 nodesWrapper();
 modalsWrapper();

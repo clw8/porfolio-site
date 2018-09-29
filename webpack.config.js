@@ -31,7 +31,6 @@ let babel = {
     test: /\.js$/,
     exclude: /node_modules/,
     use:  ["babel-loader", 
-          "es-lint-loader"
         ]
   };
 
