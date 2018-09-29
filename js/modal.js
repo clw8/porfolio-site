@@ -5,12 +5,16 @@ class Modal{
         this.interfaceEl = interfaceEl;
     }
 
+    hide(){
+        this.element.classList.remove('show-modal');
+        this.interfaceEl.classList.remove('interface-bg');
+        this.shown = false;
+    }
+
     toggleShow(event){
         event.stopPropagation();
         if(event.currentTarget == this.interfaceEl){
-            this.shown ?  this.element.classList.toggle('show-modal') : null;
-            this.shown ? this.shown = !this.shown : null;
-            this.interfaceEl.classList.remove('interface-bg');
+            this.shown ?  this.hide() : null;
         }
         else{
             this.element.classList.toggle('show-modal');

@@ -20,13 +20,13 @@
    <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <!-- comment out below for webpack -->
-  <!-- <link rel="stylesheet" href="css/styles.css">
-<script src="js/main.js" type="module"> </script> -->
+  <link rel="stylesheet" href="css/styles.css">
+<script src="js/main.js" type="module"> </script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3ASMAHgH3AFQC8gAQAPkADgD6ACQB9wAmAfcAIAH3AEkBkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKQF2ACEB9wBJAfMAGAD5ABYA+QAyAfUAKQH3AEEB9QBMAmMAAAAAAAAAAAAAAAAAOwEMADQBwQA5AfEATAHxADIB9QArAfYAQQH1ACAB+AAmAfcAQwH0AC0B9gBBAfQAbQI+AAAAAAAAAAAAAAAAAEsCFwA9AfIANgH1AE0B9ABBAfQALAH2ACwB9QAiAfcAMQH2AEcB8wArAfYARwH0AHACIgAAAAAAAAAAAAAAAAA0AREAMwHpAEAB9ABFAfQAQwH0ACQB9wArAfYALQH2ADYB9QA9AfQALgH2AEUC9ACZAx8AAAAAAAAAAAAAAAAAMQE4ADQB9QA5AfUAMQH1AEAB9AAiAfcAMwH1ADgB9QA1AfUARwHzAC4B9gBGAfQARwF2AAAAAAAAAAAAAAAAACkBKQAvAfYANwH1ADQB9QA3AfUAHAH3AC8B9QA5AfUAKwH2AD8B9AAvAfYAQwH1AC0B7gAUACgAAAAAAGYCHAAjAcUAMAH2ADsB9QA7AfQANAH1ABYA+AA0AfUAOQH1AC0B9wA9AfQAMAH1AD4B9gAuAfcAFwCpAAAAAABBAQsALAHWADEB9QApAfcANwH1ADsB9AAXAPgANwH1AD4B9AAtAfYARAHzADQB9QA6AfUAMQH2ADAB7QAIAAsAAAAAACwBMgAmAe4AJwD3ADEB9QA9AfQAKgH2ADUB9QA5AfUAMgH1AEcB9AAxAfUAQAH1AC4B9gA/AfQAHAAwAAAAAAAAAAAAHgBqACUA9wAzAfUANgH1AC4B9gAxAfUAPwH0ADoB9QBRAvMAIgH3AEIB9QAzAfYASQLzABYAOwAAAAAAAAAAAAoAUgAqAfYANQH1ADcB9QAzAfYALgH2ACcB9gA9AfUATQHzADQB9QBGAfMALwH2AD0B9AAVAB4AAAAAAAAAAAAPAB0ALAHzADYB9QA5AfUAMAH2AC0B9gAoAfYAOQH1AFYC8gAzAfUATAHzACMB9wA9AcUAMAABAAAAAAAAAAAAAAAAAFUCkwAqAfYALwH1ADEB9gA4AfUAIQH3ADAB9gBCAfQAKwH2AEAB9QArAfIAJgE+AAAAAAAAAAAAAAAAAAAAAAC1AwgAJwGtAC0B9gAtAfYAPwH0ACAB9wAiAfcAQAH1ACsB9gA1AecAGgFRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8BAgAtAVQAPwGxAD4B4wAQAPcAGwDqAD4BwAAjAXoAFAAXAAAAAAAAAAAAAAAA+AMAAPADAACAAwAAgAMAAIADAACAAwAAgAEAAAABAAAAAAAAgAAAAMAAAADAAAAAwAAAAMABAADgAwAA8AcAAA==" rel="icon" type="image/x-icon">
-  
+  <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwAAAJkAAADaAAAA+gAAAPoAAADaAAAAmAAAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAAAAmwAAAP0AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD9AAAAmgAAAAkAAAAAAAAAAAAAAAAAAAAGAAAAvQAAAP8AAAD+AAAAtQAAAGoAAAD/AAAA/wAAAGoAAAC3AAAA/gAAAP8AAAC7AAAABgAAAAAAAAAAAAAAhwAAAP8AAAD2AAAATwAAAAAAAAARAAAA/wAAAP8AAAARAAAAAAAAAFIAAAD2AAAA/wAAAIUAAAAAAAAAHAAAAPgAAAD/AAAAWwAAAAAAAAAAAAAAEQAAAP8AAAD/AAAAEQAAAAAAAAAAAAAAXgAAAP8AAAD3AAAAGwAAAHgAAAD/AAAAygAAAAEAAAAAAAAAAAAAABEAAAD/AAAA/wAAABEAAAAAAAAAAAAAAAEAAADMAAAA/wAAAHYAAAC8AAAA/wAAAHIAAAAAAAAAAAAAAAAAAAARAAAA/wAAAP8AAAARAAAAAAAAAAAAAAAAAAAAcwAAAP8AAAC7AAAA5gAAAP8AAAA+AAAAAAAAAAAAAAAAAAAAEQAAAP8AAAD/AAAAEQAAAAAAAAAAAAAAAAAAAD4AAAD/AAAA5gAAAPsAAAD/AAAAJwAAAAAAAAAAAAAAAAAAAC8AAAD/AAAA/wAAADAAAAAAAAAAAAAAAAAAAAAmAAAA/wAAAPsAAADbAAAA7wAAAA8AAAAAAAAAAAAAAHYAAAD7AAAA/wAAAP8AAAD7AAAAdwAAAAAAAAAAAAAAEgAAAPUAAADjAAAADAAAABEAAAAAAAAAAAAAAEUAAAD+AAAA/wAAAMYAAADGAAAA/wAAAP4AAABFAAAAAAAAAAAAAAAXAAAAEQAAAAAAAAAAAAAAAAAAAAAAAACjAAAA/wAAAKIAAAABAAAAAQAAAKIAAAD/AAAAowAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtgAAAP8AAAByAAAAAAAAAAAAAAByAAAA/wAAALYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIQAAAD/AAAA3wAAAD8AAAA/AAAA3wAAAP8AAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXAAAA5QAAAP8AAAD/AAAA/wAAAP8AAADlAAAAFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACIAAACuAAAA9AAAAPQAAACvAAAAIwAAAAAAAAAAAAAAAAAAAAAAAAAA8A8AAMADAACAAQAAgAEAAAwwAAAMMAAAHDgAABw4AAAcOAAAEAgAADAMAADwDwAA8Y8AAPAPAADwDwAA+B8AAA==" rel="icon" type="image/x-icon">  
+
 </head>
 <body>
   <div class="interface-wrapper">
@@ -57,13 +57,13 @@
 
         <div id="contact-arm3-options">
           <div id="linked-in-link" class="interface-link link-h social-option">
-            <a class="social-text" href="https://www.linkedin.com/in/christopher-walsh-1a2446132/">LinkedIn</a>
+            <a class="social-text" target="_blank" href="https://www.linkedin.com/in/christopher-walsh-1a2446132/">LinkedIn</a>
           </div>
           <div id="codepen-link" class="interface-link link-h social-option">
-            <a class="social-text" href="https://codepen.io/clw8/">Codepen</a>
+            <a class="social-text" target="_blank" href="https://codepen.io/clw8/">Codepen</a>
           </div>
           <div id="facebook-link" class="interface-link link-h social-option">
-            <a  class="social-text" href="https://www.facebook.com/chris.walsh.77964">Facebook</a>
+            <a  class="social-text" target="_blank" href="https://www.facebook.com/chris.walsh.77964">Facebook</a>
           </div>
         </div>
         <div id="contact-arm3-icons">
@@ -75,10 +75,10 @@
         <div id="about-arm2-options">
           <div id="about-me-link" class="interface-link link-h">Profile</div>
           <div id="github-link" class="interface-link link-h social-option">
-            <a href="https://github.com/clw8">Github</a>  
+            <a href="https://github.com/clw8" target="_blank">Github</a>  
           </div>
           <div id="cv-link" class="interface-link link-h">
-            <a href="images/Christopher-Walsh-CV.pdf">CV</a>
+            <a href="christopher-walsh-cv.pdf" target="_blank">CV</a>
           </div>
         </div>
       </div>
@@ -253,16 +253,16 @@
                   <div>
                     <div class="cut-out"></div>
                     <p>Hi, I'm Chris, an ambitious and motivated developer, hoping to play a part in the development of the web.
-                    I joined Le Wagon batch in July 2018, where I built a few projects using Ruby on Rails, which you can check out <a href="#">here</a>.
+                    I joined Le Wagon batch in July 2018, where I built a few projects using Ruby on Rails, which you can check out <a id="about-projects" href="#">here</a>.
                     Before that, I spent a few months learning front-end, where I taught myself to use frameworks such as ReactJS and Angular 2.0+, and tools such as Webpack. 
                     </p>
                 </div>
                 <div class="section flex-c about-icons"> 
-                  <a href="https://github.com/clw8" class="flex-c">
+                  <a href="https://github.com/clw8" class="flex-c" target="_blank">
                   <div id="github-bg"><div class="icon black-icon"></div></div>
                   <div  class="m-left">Github</div> 
                   </a> 
-                  <a href="https://codepen.io/clw8/" class="flex-c m-left">
+                  <a href="https://codepen.io/clw8/" class="flex-c m-left" target="_blank">
                     <div id="codepen-bg"><div class="icon black-icon"></div></div>
                     <div  class="m-left">Codepen</div>
                   </a>          
@@ -298,7 +298,7 @@
                   </ul>   
             </div>
             <div id="contact-button" class="section flex-c" >
-              <div class="button" href="#">Get in contact!</div>
+              <div id="about-contact" class="button" href="#">Get in contact!</div>
             </div>
     
             <div class="close-button">x</div>
@@ -314,8 +314,8 @@
                     <div class="m-left">
                       <h3>Busk</h3>
                       <p class="tagline">Discover live street performances near you, in real time</p>
-                      <p><a href="https://www.streetbusk.com/">View the project</a></p>
-                      <p><a href="https://github.com/awiso/streetbusk">View the source code on Github</a></p>
+                      <p><a href="https://www.streetbusk.com/" target="_blank">View the project</a></p>
+                      <p><a href="https://github.com/awiso/streetbusk" target="_blank">View the source code on Github</a></p>
                     </div>
                   </div>
                       <div class="project-desc">
@@ -334,8 +334,8 @@
                     <div class="m-left">
                       <h3>Tag It</h3>
                       <p class="tagline">Connecting graffiti artists with people who want their walls painted!</p>
-                      <p><a href="https://tag-it-app.herokuapp.com/">View the project</a></p>
-                      <p><a href="https://github.com/awiso/tag-it">View the source code on Github</a></p>
+                      <p><a href="https://tag-it-app.herokuapp.com/" target="_blank">View the project</a></p>
+                      <p><a href="https://github.com/awiso/tag-it" target="_blank">View the source code on Github</a></p>
                     </div>
                   </div>
                   <div class="project-desc">
@@ -356,8 +356,8 @@
                     <div class="m-left">
                       <h3>Cocktail Town</h3>
                       <p class="tagline">A cocktail app- add your own cocktails and share with friends</p>
-                      <p><a href="https://gentle-hollows-32432.herokuapp.com/cocktails">View the project</a></p>
-                      <p><a href="https://github.com/clw8/rails-mister-cocktail">View the source code on Github</a> </p>
+                      <p><a href="https://gentle-hollows-32432.herokuapp.com/cocktails" target="_blank">View the project</a></p>
+                      <p><a href="https://github.com/clw8/rails-mister-cocktail" target="_blank">View the source code on Github</a> </p>
                     </div>
                   </div>
                   <div class="project-desc">
@@ -377,12 +377,12 @@
                     <div class="m-left">
                       <h3>TwoDaystoAlaska</h3>
                       <p class="tagline">Official website for the debut album of artist TwoDaystoAlaska</p>
-                      <p><a href="https://twodaystoalaska.co/">View the project</a></p>
+                      <p><a href="https://twodaystoalaska.co/" target="_blank">View the project</a></p>
                     </div>
                   </div>
                   <div class="project-desc">
-                    <p>A front-end website with some page-flipping javascript features and a unique UI/UX design. This was the second website that I both designed and coded (the first website being <a href="http://rikahemmi.jp/">Rika Hemmi's website</a>).
-                      Here, an old vanilla JS script was adapted to enable the effect of flipping through the album's booklet (see the script code <a href="https://github.com/clw8/page-flip2/">here</a>). With the current backlash against Jquery, I thought it would be a useful learning experience to create this script using vanilla Javascript.
+                    <p>A front-end website with some page-flipping javascript features and a unique UI/UX design. This was the second website that I both designed and coded (the first website being <a href="http://rikahemmi.jp/" target="_blank">Rika Hemmi's website</a>).
+                      Here, an old vanilla JS script was adapted to enable the effect of flipping through the album's booklet (see the script code <a href="https://github.com/clw8/page-flip2/" target="_blank">here</a>). With the current backlash against Jquery, I thought it would be a useful learning experience to create this script using vanilla Javascript.
 
                       </p>
                     </div>

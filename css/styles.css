@@ -37,7 +37,7 @@ a:hover{
     height: 100%;
     min-height: 100vh;
     position: relative;
-    background: url(https://images.unsplash.com/photo-1489376646075-cd00ac377106?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2a0f6b63c1f98ad730ee5f3644839c90&auto=format&fit=crop&w=1055&q=80);
+    background: url(../images/unsplash_bokeh.jpeg);
     background-size: cover;
     overflow: hidden;
     display: flex;
@@ -103,8 +103,8 @@ body{
 
 header{
     position: absolute;
-    top: 2.5%;
-    left: 2.5%;
+    top: 3%;
+    left: 4%;
 }
 
 header h2{

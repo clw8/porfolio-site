@@ -35,7 +35,7 @@ let babel = {
   };
 
   let img = {
-    test: /\.(png|svg|jpg|gif)$/,
+    test: /\.(png|svg|jpg|jpeg|gif|pdf)$/,
     use: [
         'file-loader'
     ]

@@ -4,22 +4,22 @@ import ProjectCard from './project-card.js';
 function modalsWrapper(){
 
     // MODALS!!! (with OOP!!!!)
-    var interfaceWrapper = document.querySelector('.interface-wrapper');
+    let interfaceWrapper = document.querySelector('.interface-wrapper');
     
     //toggle for About modal
-    var aboutModalEl = document.querySelector('#about-modal');
-    var aboutLink = document.querySelector('#about-me-link');
-    var aboutModal = new Modal(aboutModalEl, interfaceWrapper);
-    var aboutCloseButton = document.querySelector('#about-modal .close-button');
-
+    let aboutModalEl = document.querySelector('#about-modal');
+    let aboutLink = document.querySelector('#about-me-link');
+    let aboutModal = new Modal(aboutModalEl, interfaceWrapper);
+    let aboutCloseButton = document.querySelector('#about-modal .close-button');
     addModalEventListeners([aboutLink, interfaceWrapper, aboutCloseButton], aboutModal);
-
+    
     //toggle for Projects Modal
-    var projectModalEl = document.querySelector('#project-cards-modal');
-    var projectsLinks = Array.from(document.querySelectorAll('#portfolio-arm2-options .interface-link'));
-    var projectsModal = new Modal(projectModalEl, interfaceWrapper);
-    var projectsCloseButton = document.querySelector('#project-cards-modal .close-button');
-    addModalEventListeners([...projectsLinks, interfaceWrapper, projectsCloseButton], projectsModal, (e)=>{
+    let projectModalEl = document.querySelector('#project-cards-modal');
+    let projectsLinks = Array.from(document.querySelectorAll('#portfolio-arm2-options .interface-link'));
+    let projectsModal = new Modal(projectModalEl, interfaceWrapper);
+    let projectsCloseButton = document.querySelector('#project-cards-modal .close-button');
+    let aboutProjects = document.querySelector('#about-projects');
+    addModalEventListeners([...projectsLinks, interfaceWrapper, projectsCloseButton, aboutProjects], projectsModal, (e)=>{
         if(e.currentTarget == interfaceWrapper){
             projectsLinks.map( (link)=> {
                 link.classList.remove('active');
@@ -36,19 +36,23 @@ function modalsWrapper(){
 
 
     //toggle for Contact Modal
-    var contactModalEl = document.querySelector('#contact-modal');
-    var contactLink = document.querySelector('#message-link');
-    var contactModal = new Modal(contactModalEl, interfaceWrapper);
-    var contactCloseButton = document.querySelector('#contact-modal .close-button');
+    let contactModalEl = document.querySelector('#contact-modal');
+    let contactLink = document.querySelector('#message-link');
+    let contactModal = new Modal(contactModalEl, interfaceWrapper);
+    let contactCloseButton = document.querySelector('#contact-modal .close-button');
+    let aboutContact = document.querySelector('#about-contact');
+    addModalEventListeners([contactLink, interfaceWrapper, contactCloseButton, aboutContact], contactModal);
 
-    addModalEventListeners([contactLink, interfaceWrapper, contactCloseButton], contactModal);
-
-
+    let modalInstances = [aboutModal, projectsModal, contactModal];
     function addModalEventListeners(arr, modalInstance, callback){
         arr.map((elem) => {
             elem.addEventListener('click', (e)=>{
+                
+                modalInstances.map(_inst => {
+                    _inst.hide();
+                })
+                
                 modalInstance.toggleShow(e);
-
                 !!callback ? callback(e) : null;
             })
         })
@@ -80,7 +84,7 @@ function modalsWrapper(){
     //TRANSITION CLASSES FOR PORTFOLIO CARDS
 
      //creating a new CSS rule according to the no. of cards we have
-    var style = document.createElement('style');
+    let style = document.createElement('style');
     style.type = 'text/css';
     document.querySelector('head').appendChild(style);
 
