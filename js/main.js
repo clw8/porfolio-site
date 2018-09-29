@@ -5,7 +5,7 @@ import interfaceOperations from './interface.js';
 import Typed from '../node_modules/typed.js/src/typed.js';
 
 //uncomment below for webpack
-import '../css/styles.css';
+//import '../css/styles.css';
 
 nodesWrapper();
 modalsWrapper();
@@ -49,13 +49,13 @@ contactSubmit.addEventListener('click', (e)=> {
 
 
 //header with typed.js
-let options = {
-  strings: ["Full Stack Developer", "Creative Problem Solver", "Growth Hacker", "Ruby on Rails", "ReactJS", "Node.js", "Vue.js"],
-  typeSpeed: 40,
-  loop: true,
-  startDelay: 400,
-  backDelay: 1900,
-  backSpeed: 50,
-}
+// let options = {
+//   strings: ["Full Stack Developer", "Creative Problem Solver", "Ruby on Rails", "ReactJS", "Node.js", "Vue.js"],
+//   typeSpeed: 40,
+//   loop: true,
+//   startDelay: 1800,
+//   backDelay: 1900,
+//   backSpeed: 50,
+// }
 
-let typed = new Typed(".typed", options);
+//let typed = new Typed(".typed", options);

@@ -1,7 +1,7 @@
 
 .icon{
     background-size: 210% 210%;
-    background-image: url(../images/social-media.png);
+    background-image: url('../images/social-media.png');
     height: 45px;
     width: 45px;
 }
