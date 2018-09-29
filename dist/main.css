@@ -1703,7 +1703,7 @@ clipPath circle{
     -webkit-transform: translate(-50%, -50%) !important;
             transform: translate(-50%, -50%) !important;
     visibility: visible !important;
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 
