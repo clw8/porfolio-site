@@ -15,22 +15,18 @@ interfaceOperations();
 const loadingTime = Date.now() - startTime;
 
 const loader = document.querySelector('#loader');
-if(loadingTime > 1000){
+if(loadingTime > 1400){
    loader.classList.add('hide-loader');
 }
 else{
   setTimeout(()=>{
     loader.classList.add('hide-loader');
-  }, 1000);
+  }, 1400);
 }
 
 setTimeout(()=>{
    loader.remove();
 }, 2000);  
-
-console.log(loadingTime)
-console.log(startTime)
-console.log(Date.now())
 
 //contact form
 const contactSubmit = document.querySelector('#contact-submit');
