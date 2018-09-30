@@ -151,6 +151,10 @@
     cursor: pointer;
 }
 
+#contact-modal{
+    max-height:560px;
+}
+
 .close-button:hover{
     opacity: 0.6;
 }
@@ -168,7 +172,7 @@ input[type="text"], textarea, label{
 .submit-div, #submit-res{
     display:flex;
     justify-content: flex-end;
-    margin-right: calc(2.5% + 45px);
+    margin-right: 2.5%;
 
 }
 
