@@ -173,7 +173,6 @@ input[type="text"], textarea, label{
     display:flex;
     justify-content: flex-end;
     margin-right: 2.5%;
-
 }
 
 .error{

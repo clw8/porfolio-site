@@ -655,7 +655,7 @@ textarea {
      -moz-appearance: none;
           appearance: none; }
 textarea {
-  min-height: 65px;
+  min-height: 85px;
   padding-top: 6px;
   padding-bottom: 6px; }
 input[type="email"]:focus,
@@ -1881,6 +1881,10 @@ clipPath circle{
     cursor: pointer;
 }
 
+#contact-modal{
+    max-height:560px;
+}
+
 .close-button:hover{
     opacity: 0.6;
 }
@@ -1902,7 +1906,7 @@ input[type="text"], textarea, label{
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    margin-right: calc(2.5% + 45px);
+    margin-right: 2.5%;
 
 }
 
