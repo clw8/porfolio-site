@@ -5,13 +5,32 @@ import interfaceOperations from './interface.js';
 //import Typed from '../node_modules/typed.js/src/typed.js';
 
 //uncomment below for webpack
-  import '../css/styles.css';
+ // import '../css/styles.css';
 
 nodesWrapper();
 modalsWrapper();
 interfaceOperations();
 
+//remove the loader 
+const loadingTime = Date.now() - startTime;
 
+const loader = document.querySelector('#loader');
+if(loadingTime > 1000){
+   loader.classList.add('hide-loader');
+}
+else{
+  setTimeout(()=>{
+    loader.classList.add('hide-loader');
+  }, 1000);
+}
+
+setTimeout(()=>{
+   loader.remove();
+}, 2000);  
+
+console.log(loadingTime)
+console.log(startTime)
+console.log(Date.now())
 
 //contact form
 const contactSubmit = document.querySelector('#contact-submit');

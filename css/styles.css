@@ -13,6 +13,11 @@ body{
     font-weight: light;
 }
 
+.hide-loader{
+    opacity: 0 !important;
+    pointer-events: none;
+}
+
 a{
     color: white;
     text-decoration: none;

@@ -258,7 +258,7 @@ input[type="text"], textarea, label{
 
 }
 
-@media(min-height: 800px){
+@media(min-height: 800px) and (min-width: 490px){
     #about-modal .white-main{
         display: flex;
         flex-direction: column;
@@ -311,6 +311,12 @@ input[type="text"], textarea, label{
     }
 }
 
+@media(min-width: 1500px){
+    #attr-section li div{
+        min-width: 170px;
+    }
+}
+
 
 @media(min-width: 1700px){
     #about-photo{
@@ -328,4 +334,11 @@ input[type="text"], textarea, label{
     }
 
 }
+
+@media(min-width: 1800px){
+    #attr-section li div{
+        min-width: 200px;
+    }
+}
+
 

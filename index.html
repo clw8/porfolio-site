@@ -20,15 +20,130 @@
    <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <!-- comment out below for webpack -->
-  <!-- <link rel="stylesheet" href="css/styles.css">
-<script src="js/main.js" type="module"> </script> -->
+  <link rel="stylesheet" href="css/styles.css">
+<script src="js/main.js" type="module"> </script>
 
+<script>
+  var startTime = Date.now();
+</script>
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwAAAJkAAADaAAAA+gAAAPoAAADaAAAAmAAAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAAAAmwAAAP0AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD9AAAAmgAAAAkAAAAAAAAAAAAAAAAAAAAGAAAAvQAAAP8AAAD+AAAAtQAAAGoAAAD/AAAA/wAAAGoAAAC3AAAA/gAAAP8AAAC7AAAABgAAAAAAAAAAAAAAhwAAAP8AAAD2AAAATwAAAAAAAAARAAAA/wAAAP8AAAARAAAAAAAAAFIAAAD2AAAA/wAAAIUAAAAAAAAAHAAAAPgAAAD/AAAAWwAAAAAAAAAAAAAAEQAAAP8AAAD/AAAAEQAAAAAAAAAAAAAAXgAAAP8AAAD3AAAAGwAAAHgAAAD/AAAAygAAAAEAAAAAAAAAAAAAABEAAAD/AAAA/wAAABEAAAAAAAAAAAAAAAEAAADMAAAA/wAAAHYAAAC8AAAA/wAAAHIAAAAAAAAAAAAAAAAAAAARAAAA/wAAAP8AAAARAAAAAAAAAAAAAAAAAAAAcwAAAP8AAAC7AAAA5gAAAP8AAAA+AAAAAAAAAAAAAAAAAAAAEQAAAP8AAAD/AAAAEQAAAAAAAAAAAAAAAAAAAD4AAAD/AAAA5gAAAPsAAAD/AAAAJwAAAAAAAAAAAAAAAAAAAC8AAAD/AAAA/wAAADAAAAAAAAAAAAAAAAAAAAAmAAAA/wAAAPsAAADbAAAA7wAAAA8AAAAAAAAAAAAAAHYAAAD7AAAA/wAAAP8AAAD7AAAAdwAAAAAAAAAAAAAAEgAAAPUAAADjAAAADAAAABEAAAAAAAAAAAAAAEUAAAD+AAAA/wAAAMYAAADGAAAA/wAAAP4AAABFAAAAAAAAAAAAAAAXAAAAEQAAAAAAAAAAAAAAAAAAAAAAAACjAAAA/wAAAKIAAAABAAAAAQAAAKIAAAD/AAAAowAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtgAAAP8AAAByAAAAAAAAAAAAAAByAAAA/wAAALYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIQAAAD/AAAA3wAAAD8AAAA/AAAA3wAAAP8AAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXAAAA5QAAAP8AAAD/AAAA/wAAAP8AAADlAAAAFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACIAAACuAAAA9AAAAPQAAACvAAAAIwAAAAAAAAAAAAAAAAAAAAAAAAAA8A8AAMADAACAAQAAgAEAAAwwAAAMMAAAHDgAABw4AAAcOAAAEAgAADAMAADwDwAA8Y8AAPAPAADwDwAA+B8AAA==" rel="icon" type="image/x-icon">  
+<style>
+  #loader{
+    background-color: rgb(16, 17, 37);
+        position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 99;
+    transition: opacity 0.8s ease;
+    opacity: 1;
+  }
+/** BEGIN CSS **/
 
+        @keyframes loader-color {
+            0%{ border-color: rgba(19, 9, 109, 0.8);}
+            35% {border-color: rgba(27, 75, 121, 0.726);}
+            100% {border-color: rgb(201, 214, 226);}
+        }
+
+        @-moz-keyframes loader-color {
+          0%{ border-color: rgba(19, 9, 109, 0.8);}
+          35% {border-color: rgba(27, 75, 121, 0.726);}
+            100% {border-color: rgb(201, 214, 226);}
+        }
+
+        @-webkit-keyframes loader-color {
+          0%{ border-color: rgba(19, 9, 109, 0.8);}
+          35% {border-color: rgba(27, 75, 121, 0.726);}
+            100% {border-color: rgb(201, 214, 226);}
+        }
+
+        @-o-keyframes loader-color {
+          0%{ border-color: rgba(19, 9, 109, 0.8);}
+          35% {border-color: rgba(27, 75, 121, 0.726);}
+            100% {border-color: rgb(201, 214, 226);}
+        }
+
+
+        @keyframes loading-text-opacity {
+          0%  {opacity: 0}
+          100% {opacity: 1}
+        }
+
+        @-moz-keyframes loading-text-opacity {
+          0%  {opacity: 0}
+            100% {opacity: 1}
+        }
+
+        @-webkit-keyframes loading-text-opacity {
+          0%  {opacity: 0}
+            100% {opacity: 1}
+        }
+
+        @-o-keyframes loading-text-opacity {
+            0%  {opacity: 0}
+            100% {opacity: 1}
+        }
+        .loading-container,
+        .loading {
+            height: 100px;
+            position: relative;
+            width: 100px;
+            border-radius: 100%;
+        }
+
+
+        .loading-container { margin: 33vh auto }
+
+        .loading {
+            border: 2px solid transparent;
+            border-color: #fff;
+            -webkit-animation: loader-color 2s linear 0s infinite alternate;
+            -moz-animation: loader-color 2s linear 0s infinite alternate;
+            -o-animation: loader-color 2s linear 0s infinite alternate;
+            -ms-animation: loader-color 2s linear 0s infinite alternate;
+            animation: loader-color 2s linear 0s infinite alternate;
+        }
+
+        .loading-container:hover .loading {
+            border-color: rgb(36, 33, 78);
+        }
+        .loading-container:hover .loading,
+        .loading-container .loading {
+            -webkit-transition: all 0.8s ease-in-out;
+            -moz-transition: all 0.8s ease-in-out;
+            -ms-transition: all 0.8s ease-in-out;
+            -o-transition: all 0.8s ease-in-out;
+            transition: all 0.8s ease-in-out;
+        }
+
+        #loading-text {
+            -moz-animation: loading-text-opacity 2.1s ease 0s infinite alternate;
+            -o-animation: loading-text-opacity 2.1s ease 0s infinite alternate;
+            -webkit-animation: loading-text-opacity 2.1s ease 0s infinite alternate;
+            animation: loading-text-opacity 2.1s ease 0s infinite alternate;
+            color: rgba(42, 98, 150, 0.9);
+            font-family: "Arial", "Helvetica", "arial", sans-serif;
+            font-size: 12px;
+            margin-top: 45px;
+            opacity: 0;
+            position: absolute;
+            text-align: center;
+            letter-spacing: 1px;
+            font-weight: lighter;
+            top: 0;
+            width: 100px;
+        }</style>
 </head>
 <body>
+
+  <div id="loader">
+      <div class="loading-container">
+          <div class="loading"></div>
+          <div id="loading-text">Loading</div>
+      </div>
+  </div>
   <div class="interface-wrapper">
     <header>
       <h1>Christopher Linshen Walsh</h1>
