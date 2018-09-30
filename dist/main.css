@@ -1986,6 +1986,10 @@ input[type="text"], textarea, label{
         max-height: 650px;
     }
 
+    #contact-modal{
+        max-width: 720px;
+    }
+
     .about-icons{
         margin-top: calc(5px + 1%);
     }
@@ -2042,6 +2046,11 @@ input[type="text"], textarea, label{
         -webkit-transform: translate(-50%, -50%) translateX(-150%);
                 transform: translate(-50%, -50%) translateX(-150%);
     }
+
+    #contact-modal{
+        max-width: 920px;
+    }
+
 
     /* #about-modal{
         height: 650px;
