@@ -264,3 +264,10 @@
     }
     
 }
+
+@media(min-width: 1300px){
+    #cards-buttons{
+        font-size: 1.4rem;
+        width: 220px;
+    }
+}

@@ -37,6 +37,8 @@
     left: 14.5%;
     width: 38vw;
     height: 38vw;
+    max-width: 300px;
+    max-height: 300px;
         /* max-width: 31vh; */
     /* max-height: 31vh; */
   
@@ -104,9 +106,8 @@
 
 @media(min-width:430px){
     .sphere{
-        
-        left: 34%;
-        top: 8.5%;
+        left: 31.6%;
+        top: 7.5%;
         width: 30vw;
         height: 30vw;
     }
@@ -116,9 +117,18 @@
 @media(min-width: 680px){
     .sphere{
         top: 9%;
-        left: 34%;
-        width: 25vw;
-        height: 25vw;
+        left: 31.8%;
+        width: 26vw;
+        height: 26vw;
+    }
+    
+}
+@media(min-width: 790px){
+    .sphere{
+        top: 8.6%;
+        left: 32%;
+        width: 26vw;
+        height: 26vw;
     }
     
 }
@@ -127,20 +137,29 @@
 
 @media (min-width: 850px){
     .sphere{
-        top: 11%;
+        /* top: 11%;
         left: 35%;
         width: 23vw;
-        height: 23vw;
+        height: 23vw; */
     }
 }
 
 
 @media (min-width: 1150px){
     .sphere{
-        top: 9.8%;
+        /* top: 9.8%;
         left: 38.5%;
         width: 18vw;
-        height: 18vw;
+        height: 18vw; */
+        /* left: calc(50% + 23px);
+        top: 80px;
+        transform: translateX(-50%); */
+        width: 300px;
+        height: 300px;
+        left: 50%;
+        transform: translateX(-61%);
+        /* top: calc(50px + 4%); */
+        top: 83px;
     }
 }
 

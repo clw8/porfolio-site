@@ -20,8 +20,8 @@
    <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <!-- comment out below for webpack -->
-  <!-- <link rel="stylesheet" href="css/styles.css">
-<script src="js/main.js" type="module"> </script> -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+<script src="js/main.js" type="module"> </script>
 
 <script>
   var startTime = Date.now();
@@ -526,14 +526,14 @@
                   <!-- <form action="https://getsimpleform.com/messages?form_api_token=6ba1a87558206e60524d9d0952191bab" method="post"> -->
                   <form action="" class="flex-col">
   
-                      <label for="name">Name</label>
-                      <input type="text" id="name" name="name" placeholder="Your name:" class="form-input" >
+                      <label for="name">Name*</label>
+                      <input type="text" id="name" name="name" placeholder="Your name:" class="form-input" required>
                   
-                      <label for="email">Reply to</label>
-                      <input type="text" id="email" name="email" placeholder="abc@gmail.com" class="form-input" >
+                      <label for="email">Reply to*</label>
+                      <input type="text" id="email" name="email" placeholder="abc@gmail.com" class="form-input" required>
                                   
-                      <label for="message">Your message</label>
-                      <textarea id="message" name="message" placeholder="Write something:"  class="form-input"></textarea>
+                      <label for="message">Your message*</label>
+                      <textarea id="message" name="message" placeholder="Write something:"  class="form-input" required></textarea>
                       <div class="submit-div">
                         <input id="contact-submit" type="submit" value="Submit">
                       </div>
