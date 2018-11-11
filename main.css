@@ -894,6 +894,8 @@ fieldset {
     left: 14.5%;
     width: 38vw;
     height: 38vw;
+    max-width: 300px;
+    max-height: 300px;
         /* max-width: 31vh; */
     /* max-height: 31vh; */
   
@@ -971,9 +973,8 @@ fieldset {
 
 @media(min-width:430px){
     .sphere{
-        
-        left: 34%;
-        top: 8.5%;
+        left: 31.6%;
+        top: 7.5%;
         width: 30vw;
         height: 30vw;
     }
@@ -983,9 +984,18 @@ fieldset {
 @media(min-width: 680px){
     .sphere{
         top: 9%;
-        left: 34%;
-        width: 25vw;
-        height: 25vw;
+        left: 31.8%;
+        width: 26vw;
+        height: 26vw;
+    }
+    
+}
+@media(min-width: 790px){
+    .sphere{
+        top: 8.6%;
+        left: 32%;
+        width: 26vw;
+        height: 26vw;
     }
     
 }
@@ -994,20 +1004,30 @@ fieldset {
 
 @media (min-width: 850px){
     .sphere{
-        top: 11%;
+        /* top: 11%;
         left: 35%;
         width: 23vw;
-        height: 23vw;
+        height: 23vw; */
     }
 }
 
 
 @media (min-width: 1150px){
     .sphere{
-        top: 9.8%;
+        /* top: 9.8%;
         left: 38.5%;
         width: 18vw;
-        height: 18vw;
+        height: 18vw; */
+        /* left: calc(50% + 23px);
+        top: 80px;
+        transform: translateX(-50%); */
+        width: 300px;
+        height: 300px;
+        left: 50%;
+        -webkit-transform: translateX(-61%);
+                transform: translateX(-61%);
+        /* top: calc(50px + 4%); */
+        top: 83px;
     }
 }
 
@@ -1273,55 +1293,57 @@ fieldset {
 
 
     #about-arm1-revealer{
-        left: 8.5%;
-        top: 52%;
+        left: 3.5%;
+        top: 51%;
     }
 
+
     #portfolio-arm1-revealer{
-        left: 73.6%;
-        top: -2%;    }
+        left: 72%;
+        top: -3%;
+   }
 
     #contact-arm1-revealer{
-        left: 73.6%;
-        top: 59.8%;
+        left: 71.6%;
+        top: 55.8%;
     }
 
     #portfolio-arm2-options{
-        left: 82%;
-        top: 9.7%;
+        left: 81.5%;
+        top: 7.7%;
     }
 
     #tag-it-link {
-        top: 22%;
+        top: 21.8%;
     }
     #cocktail-town-link {
-        top: 49.5%;
+        top: 47.8%;
     }
     #twodaystoalaska-link {
-        top: 74%;
+        top: 72%;
     }
 
 
 
     #contact-arm2-options{
         left: 70%;
-        top: 70.6%;
+        top: 66%;
     }
     #contact-arm2-revealer{
         top: 22%;
     }
 
     #contact-arm3-options{
-        left: 48.8%;
-        top: 77.8%;
+        left: 46%;
+        top: 72.8%;
     }
 
     #codepen-link {
-        top: 24.5%;
+        top: 24.2%;
     }
 
     #facebook-link {
-        top: 48.5%;
+        top: 47.5%;
     }
 
     #contact-arm3-icons{
@@ -1331,23 +1353,23 @@ fieldset {
 
     #contact-arm3-icons{
         left: calc(50% - 45px);
-        top: 76%;
+        top: 72%;
     }
 
     #codepen-bg {
-        top: 28%;
+        top: 27%;
     }
     #facebook-bg {
-        top: 52%;
+        top: 48%;
     }
 
 
 
 
 
-    #about-arm2-options{
-        top: 72.5%;
-        left: 10.5%;
+    #about-arm2-options {
+        top: 69.5%;
+        left: 6.5%;
     }
 
     #github-link{
@@ -1365,37 +1387,50 @@ fieldset {
  
 
     #portfolio-arm1-revealer {
-        top: -0.8%;
-        left: 75.5%;
+        top: -1.8%;
+        left: 73.5%;
     }
     #portfolio-arm2-options {
-        top: 10.5%;
+        top: 8.5%;
     }
 
+    #about-arm2-options{
+        top: 69%;
+        left: 7.5%;
+    }
 
-
+    #about-arm1-revealer {
+        left: 4.5%;
+    }
 
 
     #contact-arm1-revealer {
-        left: 75.5%;
-        top: 61%;
+        left: 73.5%;
+        top: 57%;
     }
     #contact-arm2-options {
-        top: 71.5%;
+        top: 67.5%;
     }
     #contact-arm2-revealer{
-        top: 22.5%;
+        top: 21.5%;
     }
  
 
     #contact-arm3-options {
-        top: 79%;
-        left: 50.2%;
+        top: 74%;
+        left: 48.2%;
     }
 
     #contact-arm3-icons{
-        left: calc(49% - 45px);
-        top: 76%;
+        left: calc(48% - 45px);
+        top: 73%;
+    }
+
+    #codepen-bg{
+        top: 26%;
+    }
+    #facebook-bg{
+        top: 47%;
     }
 
 }
@@ -1407,43 +1442,42 @@ fieldset {
     }
 
     #about-arm2-options{
-        top: 65.5%;
-        left: 11.5%;
+        top: 66%;
+        left: 7.5%;
     }
 
     #about-arm1-revealer {
-        left: 9%;
-        top: 47%;
-    
+        left: 5.2%;
+        top: 48%;
     }
 
     #github-link {
-        left: 22.5%;
+        left: 23.5%;
     }
 
     #cv-link {
-        left: 46.5%;
+        left: 48.5%;
     }
 
 
     #portfolio-arm1-revealer {
-        left: 70.5%;
-        top: -1%;
+        top: -1.8%;
+        left: 69.5%;
     }
     #portfolio-arm2-options {
         left: 76.6%;
         top: 8.5%;
     }
     #tag-it-link {
-        top: 21.4%;
+        top: 20.8%;
 
     }
     #cocktail-town-link {
-        top: 45.3%;
+        top: 45%;
 
     }
     #twodaystoalaska-link {
-        top: 68.2%;
+        top: 67.8%;
     }
 
 
@@ -1451,30 +1485,30 @@ fieldset {
 
 
     #contact-arm1-revealer {
-        left: 70.5%;
-        top: 55%;
+        left: 69.5%;
+        top: 54.5%;
     }
     #contact-arm2-options {
-        left: 65.5%;
-        top: 64.5%;
+        left: 65.8%;
+    top: 64.2%;
     }
     #contact-arm2-revealer {
         top: 20%;
     }
 
     #contact-arm3-options {
-        top: 71.5%;
-        left: 47.5%;
+        top: 70.5%;
+    left: 45.8%;
     }
     #codepen-link {
-        top: 22.5%;
+        top: 23%;
     }
     #facebook-link {
-        top: 44.3%;
+        top: 45.1%;
     }
 
     #contact-arm3-icons{
-        left: calc(47% - 45px);
+        left: calc(45.5% - 45px);
         top: 70%;
     }
 
@@ -1485,137 +1519,131 @@ fieldset {
         top: 45%;
     }
 }
-@media(min-width:1000px){
 
- 
-
-    #portfolio-arm1-revealer {
-        top: -0.5%;
-        left: 72.5%;
-    }
-    #portfolio-arm2-options {
-        left: 76.5%;
-        top: 9.5%;
+@media(min-width:790px){
+    g{
+        stroke-width: 1;
     }
 
-
-
-
-
-    #contact-arm1-revealer {
-        left: 72.5%;
-        top: 56%;
-    }
-    #contact-arm2-options {
-        left: 65.5%;
-        top: 65.5%;
-    }
- 
-
-    #contact-arm3-options {
-        top: 72.2%;
-        left: 48.2%;
-    }
-
-    #contact-arm3-icons{
-        left: calc(47% - 45px);
-        top: 71%;
-    }
-
-}
-
-
-@media(min-width:1150px){
-
-    #about-arm1-revealer{
-        left: 20%;
+    #about-arm1-revealer {
+        left: 7%;
+        top: 47%;
     }
 
     #about-arm2-options{
-        top: 65.5%;
-        left: 21.4%;
+        top: 66.5%;
+        left: 9.8%;
     }
 
 
     #github-link {
-        left: 17.5%;
+        left: 22%;
     }
 
     #cv-link {
-        left: 34.5%;
+        left: 45.5%;
+    }
+
+    #portfolio-arm2-options {
+        left: 75.6%;
+    }
+
+}
+
+
+
+@media(min-width:1150px){
+
+    .sphere-links{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 14.3%;
+    }
+
+    #about-arm1-revealer{
+        left: calc(34% + -463px);
+        top: 400px;
+    }
+
+    #about-arm2-options{
+        left: calc(34% + -433px);
+        top: 564px;
+    }
+
+
+    #github-link {
+        left: 140px;
+    }
+
+    #cv-link {
+        left: 274px;
     }
 
 
     #portfolio-arm1-revealer {
-        left: 65%;
-        top: -1%;
+        left: calc(34% + 280px);
+        top: -7px;
     }
     #portfolio-arm2-options {
-        left: 69.4%;
-        top: 9.2%;
+        left: calc(34% + 360px);
+        top: 82px;
     }
     #tag-it-link {
-        top: 20.5%;
+        top: 88px;
 
     }
     #cocktail-town-link {
-        top: 45%;
+        top: 190px;
 
     }
     #twodaystoalaska-link {
-        top: 67.5%;
+        top: 287px;
     }
 
 
 
     #contact-arm1-revealer {
-        left: 65%;
-        top: 55.2%;
+        left: calc(34% + 280px);
+        top: 472px;
     }
     #contact-arm2-options {
-        left: 61%;
-        top: 65%;
+        top: 556px;
+    left: calc(34% + 214px);
+    }
+
+    #contact-arm2-revealer {
+        top: 86px;
     }
 
 
     #contact-arm3-options {
-        top: 71.6%;
-        left: 48.2%;
-    }
-    #contact-arm3-icons{
-        left: calc(48% - 45px);
-        top: calc(63% + 45px);
-    }
-}
-
-@media(min-width: 1700px){
-    #portfolio-arm1-revealer {
-        left: 66.2%;
-        top: -0.4%;
-    }
-    #portfolio-arm2-options {
-        top: 10%;
+        top: 608px;
+        left: calc(34% + 11px);
     }
 
-    #contact-arm1-revealer {
-        left: 66.2%;
-        top: 55.8%;
+    #codepen-link {
+        top: 96px;
     }
-    #contact-arm2-options {
-        top: 65.6%;
-    }
- 
-    #contact-arm3-options {
-        top: 72%;
-        left: 48.8%;
+    #facebook-link {
+        top: 188px;
     }
 
     #contact-arm3-icons{
-        left: calc(56.2% - 45px);
-         top: calc(65.5% + 45px);
+        top: 588px;
+         left: calc(34% + -19px);
     }
 
+    #codepen-bg {
+        top: 98px;
+    }
+    #facebook-bg{
+        top: 188px;
+        left: -5px;
+    }
 }
+
+
 
 @media(max-width: 429px){
     #about-arm1{
@@ -1670,11 +1698,11 @@ clipPath circle{
 }
 
 #codepen-bg .icon{
-    background-position: 6% 100%;
+    background-position: 11% 100%;
 }
 
 #facebook-bg .icon{
-    background-position: 94% 100%;
+    background-position: 98% 100%;
 }
 
 #github-bg .icon{
@@ -1907,7 +1935,6 @@ input[type="text"], textarea, label{
         -ms-flex-pack: end;
             justify-content: flex-end;
     margin-right: 2.5%;
-
 }
 
 .error{
@@ -2424,6 +2451,13 @@ input[type="text"], textarea, label{
     }
     
 }
+
+@media(min-width: 1300px){
+    #cards-buttons{
+        font-size: 1.4rem;
+        width: 220px;
+    }
+}
 body{
     color:rgba(244,244,244,0.9);
     font-weight: light;
@@ -2462,7 +2496,7 @@ a:hover{
 .interface-wrapper{
     width: 100%;
     height: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 160px);
     position: relative;
     background: url(./2b0e144df5f871108a124ab300369f58.jpeg);
     background-size: cover;
@@ -2523,6 +2557,11 @@ a:hover{
     /* max-width: 92vh; */
     
     height: 68vw;
+    /* height: 72vw; */
+    /* height: 100%; */
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+
     min-width: 96vw;
     -webkit-transition: -webkit-transform 1s ease;
     transition: -webkit-transform 1s ease;
@@ -2539,10 +2578,13 @@ svg{
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0%;
-    left: -32%;
-    width: 140%;
-    height: 140%;
+    top: -0.5%;
+    left: -30%;
+    width: 132%;
+    height: 132%;
+    max-width: 1200px;
+    max-height: 850px;
+
 
 }
 
@@ -2574,16 +2616,40 @@ header h3{
 
 @media(min-width:430px){
     svg{
-        width: 110%;
-        height: 110%;
+        width: 105%;
+        height: 105%;
         left: -2%;
     }
     .content{
-        left: -10px;
+        
         -webkit-transform: translateX(5%);
+        
                 transform: translateX(5%);
     }
     
+}
+
+@media (min-width: 790px) {
+    .content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 100%;
+        position: relative;
+        left: 0%;
+        margin-bottom: 30px;
+        /* height: calc(100vh - 160px); */
+    }
+    
+    svg {
+        /* transform: translateX(5%); */
+        /* position: relative;
+        top: 0;
+        left: 0; */
+    }
 }
 
 @media(min-width: 680px){
@@ -2594,28 +2660,43 @@ header h3{
     svg{
         width: 100%;
         height: 100%;
-        position: absolute;
-        left: 0%;
+        /* position: absolute;
+        left: 0%; */
+
     }
 }
-@media(min-width: 900px){
+@media(min-width: 800px){
     body{
         font-size: 1.4em;
     }
 }
+@media(min-width: 900px){
+    body{
+        font-size: 1.5em;
+    }
+}
 
 
-@media(min-width: 1150px){
+@media(min-width: 1000px){
     body{
         font-size: 1.6em;
     }
-
-
-    .content{
-        z-index: 0;
-        width: 50vw;
-        height: 50vw;
+}
+@media(min-width: 1100px){
+    body{
+        font-size: 1.7em;
     }
+}
+
+@media (min-width: 1150px ) {
+    svg{
+        width: 105%;
+        height: 105%;
+        position: relative;
+        left: 0%;
+        top: 0%;
+    }
+
 }
 @media(min-width: 1500px){
     body{
